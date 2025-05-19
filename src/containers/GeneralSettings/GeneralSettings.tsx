@@ -37,13 +37,19 @@ const GeneralSettings = () => {
         className={classes.settings}
         style={
           isOpen
-            ? { maxHeight: "500px", marginTop: "40px" }
-            : { maxHeight: "0px", marginTop: "0px" }
+            ? { border: "1px solid #f5f5f5" }
+            : { border: "1px solid transparent" }
         }
       >
-        {setting.map((data) => {
-          return <GeneralSettingsItem {...data} />;
-        })}
+        <div
+          style={
+            isOpen ? { maxHeight: "500px" } : { maxHeight: "0px", padding: 0 }
+          }
+        >
+          {setting.map((data) => {
+            return <GeneralSettingsItem {...data} />;
+          })}
+        </div>
       </div>
     </Card>
   );

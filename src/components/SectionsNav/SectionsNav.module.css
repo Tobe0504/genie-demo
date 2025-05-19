@@ -1,48 +1,44 @@
 .container {
   display: flex;
   align-items: center;
-  gap: 12px;
   overflow: auto;
 }
 
 .container > div {
-  font-family: "General Sans";
-  font-size: 16px;
+  font-family: Geist;
   font-weight: 500;
-  line-height: 150%;
-  padding: 12px;
-  cursor: pointer;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: -1%;
+  padding: 10px 12px;
   transition: all 0.3s ease-in-out;
   flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  cursor: pointer;
+  color: var(--gray4);
 }
 
-.inActive {
-  font-weight: 400;
-  color: var(--gray-dark);
-  border-bottom: 2px solid transparent;
+.container > div > span {
+  width: 90px;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+}
+
+.active:first-child {
+  border-top-right-radius: 16px;
+}
+
+.active:not(.active:first-child) {
+  border-radius: 16px 16px 0 0;
 }
 
 .active {
-  color: var(--black);
-  border-bottom: 2px solid var(--yellow);
-}
-
-.active.button {
-  background: linear-gradient(195.12deg, #135ef2 28.81%, #568cf6 83.85%);
-  color: var(--white);
-  border-radius: 72px;
-  font-weight: 700;
-}
-
-.active.tertiary {
-  color: var(--buttonTextBlue);
-  font-weight: 700;
-  box-shadow: 0px 31px 50px 0px #09454312;
   background-color: var(--white);
-}
-
-.inActive.tertiary {
-  color: var(--grey9);
 }
 
 .container {
@@ -52,10 +48,6 @@
 
 .container::-webkit-scrollbar {
   display: none;
-}
-
-.container > div.bordered {
-  border: 3px solid red;
 }
 
 @media screen and (max-width: 767px) {

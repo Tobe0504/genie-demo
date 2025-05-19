@@ -6,6 +6,8 @@ import classes from "./SectionsNav.module.css";
 import { navItemTypes } from "@/utilities/types";
 import useUpdateSearchParams from "@/hooks/useUpdateSearchParams";
 import { capitalizeEachWord } from "@/helpers/capitalize";
+import Close from "@/assets/svgIcons/Close";
+import Plus from "@/assets/svgIcons/Plus";
 
 type SectionsNavTypes = {
   navItems: navItemTypes[];
@@ -47,10 +49,48 @@ const SectionsNav = ({
                 : classes.noButton
             } ${navItem?.isBordered ? classes.bordered : undefined}`}
           >
-            {capitalizeEachWord(navItem.title)}
+            <span>{capitalizeEachWord(navItem.title)}</span>
+
+            <Close
+              onClick={(e: any) => {
+                e.stopPropagation();
+
+                setNavItems((prevState) => {
+                  let updatedState = [...prevState];
+
+                  const filteredNavItems = updatedState.filter((_, i) => {
+                    return i !== index;
+                  });
+
+                  updatedState = filteredNavItems;
+
+                  return updatedState;
+                });
+              }}
+            />
           </div>
         );
       })}
+
+      <div
+        className={classes.make}
+        onClick={() => {
+          setNavItems((prevstate: any) => {
+            return [
+              ...prevstate,
+              {
+                title: "New tab",
+                id: navItems.length,
+                route: "/",
+                isActive: false,
+              },
+            ];
+          });
+        }}
+      >
+        <Plus />
+        <span>Make a Wish</span>
+      </div>
     </section>
   );
 };

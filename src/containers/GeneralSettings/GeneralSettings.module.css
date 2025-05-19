@@ -1,13 +1,11 @@
-.container {
-  padding: 16px 24px;
-}
-
 .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   cursor: pointer;
   user-select: none;
+  padding-inline: 24px;
+  padding-block: 16px;
 }
 
 .header > h4 {
@@ -21,6 +19,12 @@
 
 .settings {
   overflow: hidden;
-  margin-top: 40px;
+  background-color: var(--white);
+  border: 1px solid var(--gray);
+  border-radius: 24px;
+}
+
+.settings > div {
+  padding: 24px;
   transition: all 0.2s ease-in-out;
 }

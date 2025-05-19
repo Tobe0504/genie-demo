@@ -2,6 +2,7 @@ import Navigateout from "@/assets/svgIcons/Navigateout";
 import classes from "./StartCreatingCard.module.css";
 import startCreating from "../../assets/images/startCreating.svg";
 import Image from "next/image";
+import Close from "@/assets/svgIcons/Close";
 
 const StartCreatingCard = () => {
   return (
@@ -14,6 +15,10 @@ const StartCreatingCard = () => {
         </div>
 
         <Navigateout />
+      </div>
+
+      <div className={classes.close}>
+        <Close fill="#FFFFFF" />
       </div>
     </div>
   );

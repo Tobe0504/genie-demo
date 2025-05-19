@@ -12,6 +12,8 @@
   align-items: center;
   gap: 16px;
   margin-bottom: 12px;
+  padding-inline: 12px;
+  margin-top: 10px;
 }
 
 .header > h2 {

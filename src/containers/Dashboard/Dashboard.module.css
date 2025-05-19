@@ -9,3 +9,19 @@
 .container > section {
   height: calc(100vh - 38px);
 }
+
+.notfoundContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.notfoundContainer > h3 {
+  font-family: Geist;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 20px;
+  letter-spacing: -1%;
+  margin-bottom: 1rem;
+}
