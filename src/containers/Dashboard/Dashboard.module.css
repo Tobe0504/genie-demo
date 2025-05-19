@@ -4,10 +4,23 @@
 
 .sectionsNav {
   height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.sectionsNav > section:nth-child(1) {
+  flex: 1;
+}
+
+.sectionsNav > svg {
+  cursor: pointer;
 }
 
 .container > section {
-  height: calc(100vh - 38px);
+  height: calc(100vh - 50px);
+  border-radius: 0px 16px 16px 16px;
 }
 
 .notfoundContainer {

@@ -1,5 +1,6 @@
 "use client";
 
+import Ellipsis from "@/assets/svgIcons/Ellipsis";
 import SectionsNav from "@/components/SectionsNav/SectionsNav";
 import RequestTab from "@/containers/RequestTab/RequestTab";
 import AppLayout from "@/layouts/AppLayout/AppLayout";
@@ -27,6 +28,7 @@ const Dashboard = () => {
     <AppLayout className={classes.container}>
       <div className={classes.sectionsNav}>
         <SectionsNav navItems={navItems} setNavItems={setNavItems} />
+        <Ellipsis />
       </div>
       <RequestTab />
     </AppLayout>

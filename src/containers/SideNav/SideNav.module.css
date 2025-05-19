@@ -67,6 +67,15 @@
   vertical-align: middle;
 }
 
+.active > a > svg {
+  fill: #333333;
+  flex-shrink: 0;
+}
+
+.inActive > a > svg {
+  fill: #565656;
+}
+
 .lowerSection > div:nth-child(2) {
   display: flex;
   align-items: center;

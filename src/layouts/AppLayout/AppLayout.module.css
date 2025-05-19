@@ -12,4 +12,5 @@
 .container > section {
   width: calc(100vw -228px);
   flex: 1;
+  padding: 8px;
 }
