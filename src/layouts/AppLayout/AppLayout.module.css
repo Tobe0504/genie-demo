@@ -1,0 +1,15 @@
+.container {
+  background-color: var(--gray);
+  display: flex;
+  align-items: stretch;
+  height: 100svh;
+}
+
+.container > nav {
+  width: 228px;
+}
+
+.container > section {
+  width: calc(100vw -228px);
+  flex: 1;
+}

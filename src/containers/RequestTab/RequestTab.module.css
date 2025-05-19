@@ -1,0 +1,23 @@
+.container {
+  height: 100%;
+  background-color: var(--white);
+  padding: 40px 50px;
+  display: flex;
+  align-items: stretch;
+  gap: 16px;
+}
+
+.leftSection {
+  flex-basis: 428px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.leftSection > div:first-child {
+  flex: 1;
+}
+
+.rightSection {
+  flex: 1;
+}

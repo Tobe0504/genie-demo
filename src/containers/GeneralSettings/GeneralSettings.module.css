@@ -1,0 +1,26 @@
+.container {
+  padding: 16px 24px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  user-select: none;
+}
+
+.header > h4 {
+  font-family: "Geist";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -1%;
+  color: var(--gray4);
+}
+
+.settings {
+  overflow: hidden;
+  margin-top: 40px;
+  transition: all 0.2s ease-in-out;
+}

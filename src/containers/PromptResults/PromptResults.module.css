@@ -1,0 +1,51 @@
+.container {
+  height: 100%;
+  border-radius: 32px;
+  background-color: var(--gray);
+  padding: 8px 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+
+.header > h2 {
+  font-family: Geist;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -1%;
+}
+
+.header > button {
+  margin-left: auto;
+  font-family: Geist;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -1%;
+  padding: 8px 16px;
+}
+
+.header > svg {
+  cursor: pointer;
+}
+
+.results {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 12px;
+  height: 100%;
+  flex: 1;
+}
+
+.results > div {
+  flex-basis: calc(50% - 12px);
+  height: calc(50% - 12px);
+}

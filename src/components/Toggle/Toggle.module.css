@@ -1,0 +1,23 @@
+.container {
+  width: 56px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  border-radius: 90px;
+  padding-top: 2px;
+  padding-right: 8px;
+  padding-bottom: 2px;
+  padding-left: 2px;
+  background-color: var(--gray3);
+}
+
+.container > img {
+  height: 100%;
+  width: 100%;
+  filter: grayscale(20);
+}
+
+.container > svg {
+  cursor: pointer;
+}

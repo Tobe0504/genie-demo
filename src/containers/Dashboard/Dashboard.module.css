@@ -1,0 +1,11 @@
+.container {
+  min-height: 100svh;
+}
+
+.sectionsNav {
+  height: 38px;
+}
+
+.container > section {
+  height: calc(100vh - 38px);
+}

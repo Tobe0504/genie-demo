@@ -1,0 +1,57 @@
+.container {
+  margin-bottom: 16px;
+}
+
+.innerContainer {
+  padding: 14px;
+  background: var(--white);
+  border: 1px solid var(--gray);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.innerContainer > div:first-child {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  background-color: var(--gray);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.innerContainer > div:nth-child(2) > p:nth-child(1) {
+  font-family: Geist;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: -1%;
+  margin-bottom: 4px;
+  color: var(--gray2);
+}
+
+.innerContainer > div:nth-child(2) > p:nth-child(2) {
+  font-family: Geist;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0%;
+  color: var(--black2);
+}
+
+.innerContainer > svg:nth-child(3) {
+  margin-left: auto;
+}
+
+.container > p {
+  font-family: Geist;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 14px;
+  letter-spacing: -1%;
+  color: var(--gray6);
+  margin-top: 4px;
+}

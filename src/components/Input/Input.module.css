@@ -1,0 +1,160 @@
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.container {
+  margin-bottom: 20px;
+}
+
+.container > label {
+  font-family: "Geist";
+  color: var(--black);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 16px;
+  text-align: left;
+}
+
+.container > span:nth-child(2) {
+  color: var(--red);
+  font-family: "Geist";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+}
+
+.input {
+  position: relative;
+  display: block;
+  margin: 12px 0;
+}
+
+.input > span {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 20px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: "Geist";
+}
+
+.input > input {
+  display: block;
+  width: 100%;
+  padding: 8px 16px;
+  font-family: "Geist";
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 1%;
+  border-radius: calc(infinity * 1px);
+  animation: appear 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 0px 0px 1px #ebebeb99;
+  color: var(--black);
+  background: var(--white);
+  outline: 1px solid transparent;
+  border: none;
+}
+
+.input > img {
+  position: absolute;
+  right: 12px;
+  top: 0;
+  bottom: 0;
+  margin-block: auto;
+}
+
+.input input:focus {
+  outline: 1.5px solid var(--gray);
+}
+
+.invalid {
+  border: 1px solid #ff6166;
+  color: #ff6166;
+}
+
+.input > input::placeholder {
+  font-family: "Geist";
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 1%;
+  color: var(--black);
+}
+
+.errorMessage {
+  color: #ff6166;
+  font-family: "Geist";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  animation: appear 0.2s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.tip {
+  font-family: "Geist";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  color: var(--grey4);
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  .input > input {
+    padding: 12px;
+    font-family: "Geist";
+    font-size: 14px;
+    line-height: 23px;
+    border-radius: 5px;
+  }
+
+  .container > label {
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  .errorMessage {
+    font-size: 10px;
+    line-height: 18px;
+  }
+
+  .input > span {
+    right: 10px;
+  }
+}
+
+@media screen and (max-width: 767px) and (max-width: 1023px) {
+  .input > input {
+    padding: 12px;
+    font-family: "Geist";
+    font-size: 14px;
+    line-height: 23px;
+    border-radius: 5px;
+  }
+
+  .container > label {
+    font-size: 14px;
+    line-height: 25px;
+  }
+
+  .errorMessage {
+    font-size: 10px;
+    line-height: 18px;
+  }
+
+  .input > span {
+    right: 10px;
+  }
+}
